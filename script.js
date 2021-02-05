@@ -378,7 +378,7 @@ new Vue({
         method: "GET",
         url: API_ENDPOINT
       });
-      ////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////
       var _validFileExtensions = [".log", ".zip", ".tar", ".txt"];
       function Validate(oForm) {
         var arrInputs = oForm.getElementsByTagName("input");
