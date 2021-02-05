@@ -30,34 +30,37 @@
       </header>
 	  
 	  
-      <div class="decide">
-        <h1>Cyber Solution</h1>
-      </div>
-	  <h3>a product of DECIDE</h3> <br><br>
-	  
-      <div id="app">
-
-        <h2>S3 Uploader</h2>
-        <br />
-        <div v-if="!file">
-          <h3>Select a file</h3>
-          <!--<form onsubmit="return Validate(this);"> -->
-          <input type="file" id="fileName" @change="onFileChange" onChange="printFileName()">
-          
-          <p id="result"></p>
-          <!--   </form>  -->
-
+        <div class="decide">
+          <h1>Cyber Solution</h1>
         </div>
-        <div v-else>
-          <p id="result"></p>
-          <button v-if="!uploadURL" @click="removeFile">Remove files</button>
-          <button v-if="!uploadURL" @click="uploadFile">Upload files</button>
+        <h3 id="info">a product of DECIDE</h3> <br><br>
+
+        <div id="app">
+
+          <h2>S3 Uploader</h2>
+          <br />
+          <div v-if="!file">
+            <h3>Select a file</h3>
+            <!--<form onsubmit="return Validate(this);"> -->
+            <input type="file" id="fileName" @change="onFileChange" onChange="printFileName()">
+             <p hidden id="result"></p>
+            <!--   </form>  -->
+          </div>
+          <div v-else>
+            <p id="result"></p>
+            <button v-if="!uploadURL" @click="removeFile">Remove file</button>
+            <button v-if="!uploadURL" @click="uploadFile">Upload file</button>
+          </div>
+          <h2 v-if="uploadURL">Success! Files uploaded to bucket.</h2>
         </div>
-        <h2 v-if="uploadURL">Success! Files uploaded to bucket.</h2>
-      </div>
-  </div>
-  </body>
+
+    </div>
+</body>
 </section>
+<!-- partial -->
+<script src="./script.js"></script>
+
+</body>
 <!-- partial -->
   <script  src="./script.js"></script>
 
