@@ -168,32 +168,25 @@ a:hover, a:active, a:focus {
   z-index: 1;
 }
 .main .inner-content {
-  width: 40%;
-  max-width: 700px;
-  padding: 1% 10%;
+  width: 30%;
+  max-width: 500px;
+  padding: 1% 1%;
   text-align: center;
   margin: 0 auto;
 }
 .main .inner-content .decide {
   width: auto;
-  height: 10%;
-  padding: 20px;
-  padding-bottom: 2px;
+  height: 0%;
+  padding: 0px;
+  padding-bottom: 1px;
   margin: auto;
 }
-.main .inner-content input[type="file"] {
-  top: 10px;
-  left: 8px;
-  font-size: 17px;
-  color: #b8b8b8;
-}
 .main .inner-content h1 {
-  margin: 0 100 2.5em;
   font-size: 200%;
 }
 .main .inner-content h2 {
   font-size: 120%;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 .main .inner-content img {
   width: 100%;
@@ -208,17 +201,39 @@ a:hover, a:active, a:focus {
   display: inline-block;
 }
 
+#app {
+  background-color: #404040;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+#info {
+  font-size: 20px;
+}
+
 #c {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#fork {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  padding: 15px;
-  font-size: 11px;
-  background: rgba(0, 0, 0, 0.3);
+#fileName {
+  font-family: "Questrial", sans-serif;
+}
+
+input[type="file"] {
+  font-family: "Questrial", sans-serif;
+  top: 10px;
+  left: 8px;
+  font-size: 17px;
+  color: #b8b8b8;
+}
+
+button {
+  font-family: "Questrial", sans-serif;
+  display: inline-block;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
 }
