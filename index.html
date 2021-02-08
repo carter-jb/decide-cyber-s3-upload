@@ -52,7 +52,9 @@
             <button v-if="!uploadURL" @click="removeFile">Remove file</button>
             <button v-if="!uploadURL" @click="uploadFile">Upload file</button>
           </div>
-          <h2 v-if="uploadURL">Files successfully uploaded.</h2>
+          <h2 v-if="uploadURL">Files successfully uploaded.</h2></br>
+          <button onClick="window.location.href=window.location.href">Upload more files</button>
+          
         </div>
 
     </div>
