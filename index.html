@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Cyber Upload</title>
+  <title>DeliverSecured</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -17,7 +17,7 @@
     <div class="inner-content">
 
       <head>
-        <title>Upload file to S3</title>
+        <title>DeliverSecured</title>
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
       </head>
@@ -41,7 +41,7 @@
           <!-- <h2></h2> -->
           <br />
           <div v-if="!file">
-            <h3>Select a file</h3>
+           <!-- <h3></h3> -->
             <!--<form onsubmit="return Validate(this);"> -->
             <input type="file" id="fileName" @change="onFileChange" onChange="printFileName()">
              <p hidden id="result"></p>
@@ -52,7 +52,7 @@
             <button v-if="!uploadURL" @click="removeFile">Remove file</button>
             <button v-if="!uploadURL" @click="uploadFile">Upload file</button>
           </div>
-          <h2 v-if="uploadURL">Success! Files uploaded to bucket.</h2>
+          <h2 v-if="uploadURL">Files successfully uploaded.</h2>
         </div>
 
     </div>
