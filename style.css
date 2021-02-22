@@ -225,6 +225,7 @@ input[type="file"] {
   font-family: "Questrial", sans-serif;
   top: 10px;
   left: 8px;
+  margin-left: 22%;
   font-size: 17px;
   color: #b8b8b8;
 }
